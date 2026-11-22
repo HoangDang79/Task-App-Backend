@@ -1,6 +1,7 @@
 package com.example.Task_App_Backend;
 
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -8,7 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @RestController
-
+@CrossOrigin
 public class TaskController {
 
     @GetMapping(path = "/tasks")
